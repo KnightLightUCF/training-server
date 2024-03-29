@@ -1,0 +1,23 @@
+{
+  "EXTENSIONS": {
+    "mavlink": {
+      "enabled": true,
+      "networks": {
+        "mav": {
+          "connections": [
+            "udp-listen://:14550?broadcast_port=14555"
+          ],
+          "id_format": "{0:02}",
+          "statustext_targets": [
+            "client",
+            "server"
+          ],
+          "system_id": 254
+        }
+      }
+    },
+    "rc": {
+      "enabled": true
+    }
+  }
+}
